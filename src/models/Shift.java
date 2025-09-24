@@ -1,6 +1,7 @@
 package models;
 
 import java.util.HashSet;
+
 import base.Worker;
 
 public class Shift {
@@ -18,7 +19,7 @@ public class Shift {
 
     // Show all workers in this shift
     public void display() {
-        System.out.println(shiftName + "\nWorkers of this shift:\n ------------------");
+        System.out.println(shiftName + "\nCac nhan vien cua ca nay:\n ------------------");
         for (Worker worker : workerList) { 
             System.out.println("id: "+worker.getId()+" / "+worker.getName()+" / "+worker.getPosition());
         }

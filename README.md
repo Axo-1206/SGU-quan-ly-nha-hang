@@ -19,13 +19,13 @@ waiter và chef sẽ implement cả 2 hàm theo cách riêng
 
 -----------------------------------------------------------------------------------------------------------
 
-các class manager trong controllers implement interface ManagerHandler.
+các class manager trong controllers implement interface ManagerSignature.
 SupplyManager - quản lý nguồn cung => kiểm tra số lượng, mua nguyên liệu,
 TableManager - quản lý bàn cho khách => chuẩn bị bàn, lấy order, phục vụ order
 WorkerManager - quản lý nhân viên => thuê, sa thải, quản lý thời gian làm việc. Ca làm việc là class Shift
 
+hãy coi 3 cái manager trên như API của chúng ta, các nhân viên là manager thì có thể sử dụng các API trên để làm việc
+
 -----------------------------------------------------------------------------------------------------------
 
 Class Displayer trong utils dùng để hộ trợ in ra màng hình hoặc clearScreen
-Class InputHandler hộ trợ lấy input từ người dùng
-
