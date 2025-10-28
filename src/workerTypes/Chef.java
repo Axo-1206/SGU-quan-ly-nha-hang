@@ -10,6 +10,7 @@ import utils.Displayer;
 public class Chef extends base.Worker {
     private EventHandler eventHlr = EventHandler.getEventHandler();
     private Displayer displayer = Displayer.getDisplayer();
+    private SupplyManager spl = SupplyManager.getManager();
     private String[] customCompliment = {
         "Ok.. (-_-)", "Great!", "Wow! ('O')", "Amazing!!! ( @ v @ )", 
         "Outstanding! ^~^", "Tasty ( ^ v ^ )", "How.. Magic? (o_o)?", "Perfection (U w U)",
