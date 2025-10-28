@@ -1,6 +1,6 @@
 TrungChien Trung|2 Dau|2 
 Chubby TraBong|1 BeoPhi|1
-ComChienHaiSan Tom|2 Muc|1 Gao|5 Hanh|1 Dau|1
+ComChienHaiSan Tom|2 Muc|1 Com|5 Hanh|1 Dau|1
 BanhTacosGaChien Ga|1 Dau|1 VoBanh|1 Rau|1 
 PhoBo Bo|2 BotGao|3 Hanh|1 Gia|1 NuocLeo|1
 HuTieuNamVang Tom|2 Heo|2 Mi|1 Hanh|1 Gia|1
