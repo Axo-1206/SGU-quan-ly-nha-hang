@@ -87,7 +87,13 @@ public class RevenueManager implements ManagerHandler {
             System.out.println("Doanh thu cua ngay " + date.format(formatter) + ": " + df.format(revenue.getTotalAmount()));
             System.out.println("==================================================");
             System.out.println("Tien von nguyen lieu cua ngay " + date.format(formatter) + ": " + df.format(revenue.getTotalAmount()/3*1));
-            System.out.println("Chi phi khau hao cua ngay " + date.format(formatter) + ": " + df.format(getProfitLoss().get(date)));
+            // System.out.println("Chi phi khau hao cua ngay " + date.format(formatter) + ": " + df.format(getProfitLoss().get(date)));
+            if (getProfitLoss().get(date) == null ){
+                System.out.println("Chi phi khau hao cua ngay " + date.format(formatter) + ": 0");
+            }
+            else {
+                System.out.println("Chi phi khau hao cua ngay " + date.format(formatter) + ": " + df.format(getProfitLoss().get(date)));
+            }
             System.out.println("Loi nhuan cua ngay " + date.format(formatter) + ": " + df.format(revenue.getTotalProfit()));
         } else {    
             System.out.println("Khong tin thay doanh thu va loi nhuan cua ngay " + date.format(formatter));
@@ -147,7 +153,7 @@ public class RevenueManager implements ManagerHandler {
     // Public method to get the single self
     public static RevenueManager getManager() {
         if (self == null) {
-            self = new RevenueManager();
+            self = new RevenueManager();            
         }
         return self;
     }    

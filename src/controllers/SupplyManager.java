@@ -36,10 +36,7 @@ public class SupplyManager implements ManagerHandler {
             "Xem cac nguyen lieu khong du de lam mot mon",
             "Them nguyen lieu",
             "Xoa nguyen lieu (theo ID)",
-            "Tim kiem nguyen lieu",
-            "TEST nguyen lieu date thap nhat",
-            "TEST nguyen lieu duoc lay ra khoi kho",
-            "TEST tim nguyen lieu co han su dung nho nhat"
+            "Tim kiem nguyen lieu"
         };
 
         while (true) {
@@ -73,29 +70,6 @@ public class SupplyManager implements ManagerHandler {
                 case 6: {
                     System.out.print("Nhap ten nguyen lieu can tim: ");
                     String name = inputHandler.getScanner().nextLine().trim(); if (!name.equals("0")) search(name);
-                    break;
-                }
-                // test hàm
-                case 7: {
-                    LocalDate today = LocalDate.now();
-                    deleteExpiredandLowQuantityIngredients(today);
-                    break;
-                }
-                case 8: {
-                    System.out.print("Nhap ten nguyen lieu (nhap 0 de huy): ");
-                    String name = inputHandler.getScanner().nextLine().trim().replaceAll("\\s+", "");
-                    Ingredient newIng = new Ingredient(name);
-                    System.out.print("Moi nhap vao so luong: ");
-                    int qty = inputHandler.getScanner().nextInt();
-                    getIngredient(newIng, qty);
-                    System.out.print("Da lay nguyen lieu ra khoi kho");
-                    break;
-                }
-                case 9: {
-                    System.out.print("Nhap ten nguyen lieu (nhap 0 de huy): ");
-                    String name = inputHandler.getScanner().nextLine().trim().replaceAll("\\s+", "");
-                    getIngredient(findEarliestExpiry(name), 19);
-                    System.out.print("Da lay nguyen lieu ra khoi kho");
                     break;
                 }
                 default:
