@@ -98,7 +98,7 @@ public class WorkerManager implements ManagerHandler {
 
         // Xóa nhân viên ra khỏi lịch
         for (Map.Entry<Integer, Shift> entry : schedule.entrySet()) {
-            System.out.println();
+            //System.out.println();
             entry.getValue().removeWorker(wrk);
         }
 
